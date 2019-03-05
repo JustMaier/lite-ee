@@ -1,4 +1,6 @@
-export default class LiteEventEmitter {
+'use strict';
+
+class LiteEventEmitter {
     constructor(){
         this._handlers = {};
     }
@@ -30,3 +32,5 @@ export default class LiteEventEmitter {
         this._handlers[type].forEach(handler=>handler(...args));
     }
 }
+
+module.exports = LiteEventEmitter;

@@ -1,4 +1,4 @@
-export default class LiteEventEmitter {
+class LiteEventEmitter {
     constructor(){
         this._handlers = {};
     }
@@ -30,3 +30,5 @@ export default class LiteEventEmitter {
         this._handlers[type].forEach(handler=>handler(...args));
     }
 }
+
+export default LiteEventEmitter;
