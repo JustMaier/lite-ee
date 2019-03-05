@@ -10,10 +10,11 @@ export default class LiteEventEmitter {
     }
 
     once(type, handler){
-        return this.on(type, (...args) =>{
-            handler(...args);
-            this.off(type, handler);
-        });
+		const onceHandler = (...args) => {
+			handler(...args);
+            this.off(type, onceHandler);
+        };
+        return this.on(type, onceHandler);
     }
 
     off(type, handler = null){
