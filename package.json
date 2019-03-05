@@ -1,0 +1,9 @@
+{
+  "name": "lite-event-emitter",
+  "version": "1.0.0",
+  "description": "An ultralight es6 event emitter with on, once, off, and emit",
+  "main": "index.js",
+  "keywords": ["events"],
+  "author": "Justin Maier <just.maier@gmail.com> (https://heyj.us/)",
+  "license": "MIT"
+}
