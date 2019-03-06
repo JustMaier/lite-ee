@@ -1,13 +1,13 @@
-lite-event-emitter
+lite-ee
 ==================
 
 An ultralite es6 event emitter with on, once, off, and emit
 
 ```
-npm i --save git+https://github.com/justmaier/lite-event-emitter.git
+npm i --save lite-ee
 ```
 
-- `on('event', (...args) => {})`
-- `once('event', (...args) => {})`
-- `off('event'[, handler])`
-- `emit('event', ...args)` 
+- `on('event', (...args) => {}) => this`
+- `once('event', (...args) => {}) => this`
+- `off('event'[, handler]) => this`
+- `emit('event', ...args) => void` 
