@@ -1,0 +1,6 @@
+{
+    "name": "lite-ee/mixin",
+    "private": true,
+    "main": "../dist/lite-ee-mixin.js",
+    "module": "../dist/lite-ee-mixin.es.js"
+  }

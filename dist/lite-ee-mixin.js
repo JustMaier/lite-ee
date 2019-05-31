@@ -1,5 +1,8 @@
-class LiteEventEmitter {
-    constructor(){
+'use strict';
+
+const mixin = (superclass) => class extends superclass {
+    constructor(...args){
+        super(...args);
         this._handlers = {};
     }
 
@@ -30,6 +33,6 @@ class LiteEventEmitter {
         if(!this._handlers[type] || this._handlers[type].length === 0) return;
         this._handlers[type].forEach(handler=>handler(...args));
     }
-}
+};
 
-export default LiteEventEmitter;
+module.exports = mixin;

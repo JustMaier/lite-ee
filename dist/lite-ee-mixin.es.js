@@ -1,5 +1,6 @@
-export default class LiteEventEmitter {
-    constructor(){
+const mixin = (superclass) => class extends superclass {
+    constructor(...args){
+        super(...args);
         this._handlers = {};
     }
 
@@ -30,4 +31,6 @@ export default class LiteEventEmitter {
         if(!this._handlers[type] || this._handlers[type].length === 0) return;
         this._handlers[type].forEach(handler=>handler(...args));
     }
-}
+};
+
+export default mixin;

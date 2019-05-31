@@ -1,11 +1,12 @@
 {
   "name": "lite-ee",
-  "version": "1.0.1",
+  "version": "1.1.1",
   "description": "An ultralight es6 event emitter with on, once, off, and emit",
-  "main": "dist/index.js",
-  "module": "dist/index.es.js",
+  "main": "dist/lite-ee.js",
+  "module": "dist/lite-ee.es.js",
   "files": [
-    "dist"
+    "dist",
+    "mixin"
   ],
   "repository": {
     "type": "git",
